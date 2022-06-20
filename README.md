@@ -31,7 +31,7 @@ I would process a file in chunks so I'll read an amount of rows at a time and 
 
 Also, I would have changed the approach for this solution, instead of holding all lines in memory and doing iterative comparison between them, I would save every word as a node in a graph, and hold the connections (represents matches)  of each node to another for input and output connection.Each word can be identified by 2 parameters which are timeStamp(column) and index (the location of the word in the sentence starting from 0 to <size of sentence>). After building that that will bring the time complexity to O(K) where K=N+E, which is the number of words(N) and the number of edges (E). 
 
-A whiteBoard draw picture is attached for graph approach.
+*A whiteBoard draw picture is attached for graph approach in the resource folder inside the zip*
 in scaling, since every line now will be not unique in a multithreaded environment, we will suffer from collision between lines.in general for two weeks work i should create a mechanism where every time memory is about to end we output out data to some storage and keep managing this incoming log.
 Natanel
 
