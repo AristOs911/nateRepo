@@ -9,7 +9,9 @@ The sequence go like this:
 look for matched lines in the map, and try to match them by the pattern, if success -> merge line to map and continue to the next line.
 otherwise -> look for a candidates (lines that weren't matched yet) and try to match with each one of them(-the approach is that if we found match in the map, there is no need to keep looking in the map and in the candidate list, since if we found match chain in the map we guarantee that all proper previous lines were already merged to them).
 
-
+i approch to write a good HL code in the time frame given fo the task.
+each metod in each class are suppose to do one thing.
+PrivateInvestigatorLogger.java is main class where most of the algoritmics occur, there is a place to improve some of the methods there to be more solid and do only one thing, other then that, i tried to keep on grinularity and named the code in a way methods and vars names give a hint about what they do.
 
 
 ***1. What can you say about the complexity of your code?
